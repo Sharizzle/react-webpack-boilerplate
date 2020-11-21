@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     chunkFilename: '[id].js',
-    publicPath: '',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -40,7 +40,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [['autoprefixer', {}]],
+                plugins: [[autoprefixer, {}]],
               },
             },
           },
@@ -55,6 +55,9 @@ module.exports = {
         use: ['@svgr/webpack'],
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
