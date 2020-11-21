@@ -18,6 +18,10 @@
   "plugins": ["react"],
   "rules": {
     "no-console": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-fragments": [0],
+    "arrow-body-style": [0],
+    "react/prop-types": [0],
+    "object-curly-newline": [0]
   }
 }
