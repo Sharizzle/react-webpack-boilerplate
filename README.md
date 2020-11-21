@@ -27,3 +27,8 @@ To import images, png, svgs or gifs place them in the assets folder and import u
 ```js
 import MyImage from './assets/image.png';
 ```
+# Notes
+
+Make sure you have the **ESLint Extension** for your text editor enabled. For VSCode:
+
+[ESLint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
